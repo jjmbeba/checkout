@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import 'functions';
+
+body{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title{
+    font-size: rem(24);
+}
+
+.checkout{
+    &__item{
+        &__title{
+            font-size: rem(12)
+        }
+        &__count{
+            span{
+                font-size: rem(16);
+            }
+        }
+    }
+    &__shipping{
+        font-size: rem(14);
+    }
+    &__total{
+        font-size: rem(14);
+    }
+}
+
+.form{
+    &__title{
+        font-size: rem(14);
+    }
+
+    &__section{
+        &__sub{
+            font-size: rem(10);
+        }
+    }
+
+    &__input{
+        select{
+            font-family: 'Montserrat', sans-serif;
+            font-size: rem(12);
+            font-weight: 600;
+        }
+
+        &__label{
+            font-size: rem(10);
+            font-weight: 600;
+        }
+    }
+
+    ::placeholder{
+        font-size: rem(12);
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.disPrice{
+    font-size: rem(14);
+}
+
+.initPrice{
+    font-size: rem(10);
+}
+
+#continue{
+    font-size: rem(16);
+}
+
+@media screen and (min-width:992px){
+    .title{
+        font-size: rem(36);
+    }
+
+    .checkout{
+        &__item{
+            &__title{
+                font-size: rem(16)
+            }
+        }
+        &__shipping{
+            font-size: rem(18);
+        }
+        &__total{
+            font-size: rem(18);
+        }
+    }
+    
+.disPrice{
+    font-size: rem(16);
+}
+
+.initPrice{
+    font-size: rem(12);
+}
+
+.form{
+    &__title{
+        font-size: rem(18);
+    }
+    &__section{
+        &__sub{
+            font-size: rem(12);
+        }
+    }
+}
+
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/scss/main.css">
+  <title>Checkout</title>
+</head>
+<body>
+  <h1 class="title">Checkout</h1>
+  <div class="container">
+    <section class="checkout">
+      <div class="checkout__item__container">
+        <div class="checkout__item">
+          <div class="checkout__item__img">
+            <img src="/photo1.png" alt="" class="img">
+          </div>
+          <div class="checkout__item__text">
+            <h3 class="checkout__item__title">Vintage Backbag</h3>
+            <div class="checkout__item__price">
+              <span class="disPrice">$54.99</span>
+              <span class="initPrice">$94.99</span>
+            </div>
+            <div class="checkout__item__count">
+              <button id="backMinus">-</button>
+              <span id="backCount">0</span>
+              <button id="backAdd">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="checkout__item">
+          <div class="checkout__item__img">
+            <img src="/photo2.png" alt="" class="img">
+          </div>
+          <div class="checkout__item__text">
+            <h3 class="checkout__item__title">Levi Shoes</h3>
+            <div class="checkout__item__price">
+              <span class="disPrice">$74.99</span>
+              <span class="initPrice">$124.99</span>
+            </div>
+            <div class="checkout__item__count">
+              <button id="shoeMinus">-</button>
+              <span id="shoeCount">0</span>
+              <button id="shoeAdd">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr id="firstLine" class="hrLine">
+      <div class="checkout__shipping">
+        <span class="ship">Shipping</span>
+        <span class="shipAmt">$19</span>
+      </div>
+      <hr  id="secondLine" class="hrLine">
+      <div class="checkout__total">
+        <span class="total">Total</span>
+        <span class="totalAmt" id="calcTotal">$0</span>
+      </div>
+    </section>
+    <main class="form">
+      <form action="" name="myForm" onsubmit="validateForm()">
+        <h2 class="form__title">Contact information</h2>
+        <div class="form__section">
+          <div class="form__section__input">
+            <h4 class="form__section__sub">E-mail</h4>
+            <div class="form__input">
+              <div class="form__input__icon">
+                <img src="/email_black_24dp.svg" alt="">
+              </div>
+              <input type="text" name="email" placeholder="Enter your email...">
+            </div>
+          <div class="form__section__input">
+            <h4 class="form__section__sub">Phone</h4>
+            <div class="form__input">
+              <div class="form__input__icon">
+                <img src="/phone_black_24dp.svg" alt="">
+              </div>
+              <input type="text" name="phone" placeholder="Enter your phone...">
+            </div>
+          </div>
+      <div class="secondForm">
+        <h2 class="form__title">Shipping address</h2>
+        <div class="form__section">
+          <div class="form__section__input">
+            <h4 class="form__section__sub">Full name</h4>
+            <div class="form__input">
+              <div class="form__input__icon">
+                <img src="/account_circle_black_24dp.svg" alt="">
+              </div>
+              <input type="text" name="name" placeholder="Your name...">
+            </div>
+          <div class="form__section__input">
+            <h4 class="form__section__sub">Address</h4>
+            <div class="form__input">
+              <div class="form__input__icon">
+                <img src="/home_black_24dp.svg" alt="">
+              </div>
+              <input type="text" name="address" placeholder="Your address...">
+            </div>
+          </div>
+          <div class="form__section__input">
+            <h4 class="form__section__sub">City</h4>
+            <div class="form__input">
+              <div class="form__input__icon">
+                <img src="/location_city_black_24dp.svg" alt="">
+              </div>
+              <input type="text" name="city" placeholder="Your city...">
+            </div>
+          </div>
+          <div class="form__section__container">
+            <div class="form__section__input half">
+              <h4 class="form__section__sub">Country</h4>
+              <div class="form__input">
+                <div class="form__input__icon">
+                  <img src="/location_city_black_24dp.svg" alt="">
+                </div>
+                <select name="countries" name="countries" id="countries" placeholder="Your country...">
+                  <option value="" selected>Your country...</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Tanzania">Tanzania</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="Burundi">Burundi</option>
+                  <option value="Somalia">Somalia</option>
+                  <option value="Sudan">Sudan</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="SA">South Africa</option>
+                  <option value="DRC">DRC</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__section__input half">
+              <h4 class="form__section__sub">Postal code</h4>
+              <div class="form__input">
+                <div class="form__input__icon">
+                  <img src="/markunread_mailbox_black_24dp.svg" alt="">
+                </div>
+                <input type="text" name="postal" placeholder="Your postal code...">
+              </div>
+            </div>
+          </div>
+          <div class="form__input__check">
+            <input type="checkbox" name="save" id="save">
+            <label class="form__input__label" for="save">Save this information for next time</label>
+          </div>
+          <input type="submit" value="Continue" id="continue">
+      </form>
+      </div>
+    </main>
+  
+  </div>
+  
+  <script src="/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+$txtDark:#4E5150;
+$txtOrange:#F2994A;
+$txtGray:#333333;
+$txtGray2:#4F4F4F;
+$bgGray:#F2F2F2;
+$bgGray2:#828282;
+$bgGray3:#E0E0E0;
+$lineGray:#BDBDBD;
+$white:#FFFFFF;
+
+.title{
+    color: $txtDark;
+}
+
+.checkout{
+    background-color: $bgGray;
+    
+
+    &__item{
+        &__title{
+            color: $txtGray;
+        }
+        &__count{
+            color: $txtGray;
+            border: 1px solid $bgGray2;
+
+            button{
+                background: $bgGray3;
+                color: $bgGray2;
+            }
+        }
+    }
+    &__shipping{
+        color: $txtGray;
+    }
+    &__total{
+        color: $txtGray;
+    }
+
+}
+
+.form{
+    &__title{
+        color: $txtGray;
+    }
+
+    &__section{
+        &__sub{
+            color:$txtGray2 ;
+        }
+    }
+
+    &__input{
+        select{
+            background-color: $white;
+            color: $bgGray2;
+        }
+    }
+
+    ::placeholder{
+        color:$bgGray2;
+    }
+}
+
+.disPrice{
+    color: $txtOrange;
+}
+
+.initPrice{
+    color: $txtGray;
+}
+
+.hrLine{
+    color: $lineGray;
+}
+
+#continue{
+    background-color: $txtOrange;
+    color: $white;
+}

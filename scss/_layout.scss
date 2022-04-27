@@ -1,0 +1,251 @@
+@import 'functions';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    padding-inline: rem(13);
+    padding-top: rem(32);
+    padding-bottom: rem(135);
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    border-radius: rem(13);
+}
+
+.checkout{
+    margin-top: rem(20.96);
+    padding-top: rem(30);
+    padding-inline: rem(26);
+    padding-bottom: rem(20);
+    border-radius: rem(12);
+
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: rem(20);
+        height: rem(124.64);
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: rem(28);
+        }
+
+        &__text{
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        &__price{
+            margin-top: rem(8);
+            display: flex;
+            align-items: center;
+            gap: rem(11);
+        }
+
+
+        &__img{
+            max-width: rem(122.75);
+            height: rem(124.64);
+        }
+
+        &__count{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: rem(15);
+            padding-bottom: rem(15);
+            border-radius: rem(12);
+            margin-top: rem(22.13);
+
+            button{
+                border: none;
+                border-radius: rem(4);
+                width: rem(19.39);
+                height: rem(19.39);
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+    &__shipping{
+        margin-top: rem(10);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__total{
+        margin-top:rem(15);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.initPrice{
+    text-decoration: line-through;
+}
+
+#firstLine{
+    margin-top: rem(87.15);
+}
+
+#secondLine{
+    margin-top: rem(10);
+}
+
+.hrLine{
+    height: rem(1);
+}
+
+.form{
+    margin-top: rem(39);
+
+    &__section{
+        &__sub{
+            margin-top: rem(11.19);
+        }
+
+        &__container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__input{
+            width: 100%;
+            
+
+            
+        }
+    }
+    &__input{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        input{
+            margin-top: rem(5);
+            width: 100%;
+            display: block;
+            padding: rem(12);
+            padding-left: rem(45);
+            border-radius: rem(12);
+            border: 1px solid #828282;
+            margin-bottom: rem(5);
+        }
+
+        select{
+            margin-top: rem(5);
+            width: rem(162.98);
+            display: block;
+            padding: rem(12);
+            padding-left: rem(45);
+            border-radius: rem(12);
+            border: 1px solid #828282;
+            margin-bottom: rem(5);
+        }
+
+        &__icon{
+            position: absolute;
+            left: rem(11.75);
+            width: rem(20);
+            top: rem(15);
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        &__check{
+            margin-top:rem(10) ;
+        }
+    }
+}
+
+#continue{
+    margin-top: rem(20.49);
+    position: absolute;
+    right: rem(14);
+    padding: rem(17) rem(45);
+    border-radius: rem(12);
+    border: none;
+}
+
+.secondForm{
+    margin-top: rem(40);
+}
+
+.half{
+    width: rem(162.98);
+}
+
+#save{
+    margin-top: rem(17.29);
+    width: rem(16);
+    text-align: center;
+    border-radius: rem(4);
+    border: none;
+}
+
+@media screen and (min-width:992px){
+    body{
+        padding-inline: rem(240);
+        padding-top: rem(64);
+    }
+
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: rem(112);
+
+
+    }
+
+    .form{
+        margin-top: rem(54);
+        width: rem(465);
+
+        &__section{
+            &__sub{
+                margin-top: rem(20);
+            }
+        }
+        &__input{
+            max-width: rem(465);
+
+            select{
+                width: rem(217);
+            }
+        }
+    }
+
+    .half{
+        width: rem(217);
+    }
+
+    #continue{
+        right: auto;
+        left: rem(552.5);
+        top: rem(803.5);
+    }
+}

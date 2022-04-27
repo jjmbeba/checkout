@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+body {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.checkout__item__title {
+  font-size: 0.75rem;
+}
+.checkout__item__count span {
+  font-size: 1rem;
+}
+.checkout__shipping {
+  font-size: 0.875rem;
+}
+.checkout__total {
+  font-size: 0.875rem;
+}
+
+.form__title {
+  font-size: 0.875rem;
+}
+.form__section__sub {
+  font-size: 0.625rem;
+}
+.form__input select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.form__input__label {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+.form ::-moz-placeholder {
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+}
+.form :-ms-input-placeholder {
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+}
+.form ::placeholder {
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.disPrice {
+  font-size: 0.875rem;
+}
+
+.initPrice {
+  font-size: 0.625rem;
+}
+
+#continue {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .checkout__item__title {
+    font-size: 1rem;
+  }
+  .checkout__shipping {
+    font-size: 1.125rem;
+  }
+  .checkout__total {
+    font-size: 1.125rem;
+  }
+
+  .disPrice {
+    font-size: 1rem;
+  }
+
+  .initPrice {
+    font-size: 0.75rem;
+  }
+
+  .form__title {
+    font-size: 1.125rem;
+  }
+  .form__section__sub {
+    font-size: 0.75rem;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding-inline: 0.8125rem;
+  padding-top: 2rem;
+  padding-bottom: 8.4375rem;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8125rem;
+}
+
+.checkout {
+  margin-top: 1.31rem;
+  padding-top: 1.875rem;
+  padding-inline: 1.625rem;
+  padding-bottom: 1.25rem;
+  border-radius: 0.75rem;
+}
+.checkout__item {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1.25rem;
+  height: 7.79rem;
+}
+.checkout__item__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.75rem;
+}
+.checkout__item__text {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.checkout__item__price {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6875rem;
+}
+.checkout__item__img {
+  max-width: 7.671875rem;
+  height: 7.79rem;
+}
+.checkout__item__count {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  border-radius: 0.75rem;
+  margin-top: 1.383125rem;
+}
+.checkout__item__count button {
+  border: none;
+  border-radius: 0.25rem;
+  width: 1.211875rem;
+  height: 1.211875rem;
+  text-align: center;
+  cursor: pointer;
+}
+.checkout__shipping {
+  margin-top: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkout__total {
+  margin-top: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.initPrice {
+  text-decoration: line-through;
+}
+
+#firstLine {
+  margin-top: 5.446875rem;
+}
+
+#secondLine {
+  margin-top: 0.625rem;
+}
+
+.hrLine {
+  height: 0.0625rem;
+}
+
+.form {
+  margin-top: 2.4375rem;
+}
+.form__section__sub {
+  margin-top: 0.699375rem;
+}
+.form__section__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form__section__input {
+  width: 100%;
+}
+.form__input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__input input {
+  margin-top: 0.3125rem;
+  width: 100%;
+  display: block;
+  padding: 0.75rem;
+  padding-left: 2.8125rem;
+  border-radius: 0.75rem;
+  border: 1px solid #828282;
+  margin-bottom: 0.3125rem;
+}
+.form__input select {
+  margin-top: 0.3125rem;
+  width: 10.18625rem;
+  display: block;
+  padding: 0.75rem;
+  padding-left: 2.8125rem;
+  border-radius: 0.75rem;
+  border: 1px solid #828282;
+  margin-bottom: 0.3125rem;
+}
+.form__input__icon {
+  position: absolute;
+  left: 0.734375rem;
+  width: 1.25rem;
+  top: 0.9375rem;
+}
+.form__input__icon img {
+  max-width: 100%;
+  height: auto;
+}
+.form__input__check {
+  margin-top: 0.625rem;
+}
+
+#continue {
+  margin-top: 1.280625rem;
+  position: absolute;
+  right: 0.875rem;
+  padding: 1.0625rem 2.8125rem;
+  border-radius: 0.75rem;
+  border: none;
+}
+
+.secondForm {
+  margin-top: 2.5rem;
+}
+
+.half {
+  width: 10.18625rem;
+}
+
+#save {
+  margin-top: 1.080625rem;
+  width: 1rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    padding-inline: 15rem;
+    padding-top: 4rem;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+  }
+
+  .form {
+    margin-top: 3.375rem;
+    width: 29.0625rem;
+  }
+  .form__section__sub {
+    margin-top: 1.25rem;
+  }
+  .form__input {
+    max-width: 29.0625rem;
+  }
+  .form__input select {
+    width: 13.5625rem;
+  }
+
+  .half {
+    width: 13.5625rem;
+  }
+
+  #continue {
+    right: auto;
+    left: 34.53125rem;
+    top: 50.21875rem;
+  }
+}
+.title {
+  color: #4E5150;
+}
+
+.checkout {
+  background-color: #F2F2F2;
+}
+.checkout__item__title {
+  color: #333333;
+}
+.checkout__item__count {
+  color: #333333;
+  border: 1px solid #828282;
+}
+.checkout__item__count button {
+  background: #E0E0E0;
+  color: #828282;
+}
+.checkout__shipping {
+  color: #333333;
+}
+.checkout__total {
+  color: #333333;
+}
+
+.form__title {
+  color: #333333;
+}
+.form__section__sub {
+  color: #4F4F4F;
+}
+.form__input select {
+  background-color: #FFFFFF;
+  color: #828282;
+}
+.form ::-moz-placeholder {
+  color: #828282;
+}
+.form :-ms-input-placeholder {
+  color: #828282;
+}
+.form ::placeholder {
+  color: #828282;
+}
+
+.disPrice {
+  color: #F2994A;
+}
+
+.initPrice {
+  color: #333333;
+}
+
+.hrLine {
+  color: #BDBDBD;
+}
+
+#continue {
+  background-color: #F2994A;
+  color: #FFFFFF;
+}/*# sourceMappingURL=main.css.map */
