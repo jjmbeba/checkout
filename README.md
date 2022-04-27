@@ -66,7 +66,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com)  insta
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/jjmbeba/checkout.git
 ```
 
 ## Acknowledgements
@@ -77,5 +77,5 @@ $ git clone https://github.com/your-user-name/your-project-name
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
+- Website [your-website.com](https://exquisite-cassata-4712ae.netlify.app/})
 - GitHub [@jjmbeba](https://github.com/jjmbeba)
